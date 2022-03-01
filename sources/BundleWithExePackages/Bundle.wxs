@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+WiX Toolset Pills 15mg
+Copyright (C) 2019-2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<Wix
+    xmlns="http://schemas.microsoft.com/wix/2006/wi"
+    xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+
+    <Bundle
+        Name="Bundle with EXE Packages - WiX Toolset Pill"
+        Version="1.0.0.0"
+        Manufacturer="Dust in the Wind"
+        UpgradeCode="E3197422-39A1-4E41-B876-EED7B411F4FB">
+
+        <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+
+        <Variable
+            Name="Message1"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 1."
+            bal:Overridable="yes" />
+
+        <Variable
+            Name="Message2"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 2."
+            bal:Overridable="yes" />
+
+        <Chain>
+            <PackageGroupRef Id="Installer1PackageGroup" />
+            <PackageGroupRef Id="Installer2PackageGroup" />
+        </Chain>
+
+    </Bundle>
+
+</Wix>
