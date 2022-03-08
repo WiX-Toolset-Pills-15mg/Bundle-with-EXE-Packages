@@ -16,7 +16,6 @@
 
 using System;
 using DustInTheWind.Installer1.Commands;
-using DustInTheWind.Installer2;
 
 namespace DustInTheWind.Installer1
 {

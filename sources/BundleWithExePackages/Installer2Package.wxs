@@ -37,12 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Id="Installer2Package"
                 SourceFile="$(var.Installer2.TargetDir)$(var.Installer2.TargetName).exe"
                 DetectCondition="Installer2IsInstalled = 1"
-                DisplayName="Installer2"
-                Compressed="yes"
-                Cache="no"
-                PerMachine="yes"
-                Permanent="no"
-                Vital="yes"
+                DisplayName="Installer 2"
                 InstallCommand="action=install installdir=&quot;c:\Program Files\BundleWithExePackages\Installer2&quot; message=&quot;[Message2]&quot;"
                 UninstallCommand="action=uninstall">
 

@@ -35,14 +35,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <PackageGroup Id="Installer1PackageGroup">
             <ExePackage
                 Id="Installer1Package"
-                SourceFile="$(var.Installer1.TargetDir)$(var.Installer1.TargetName).exe"
+                SourceFile="$(var.Installer1.TargetPath)"
                 DetectCondition="Installer1IsInstalled = 1"
-                DisplayName="Installer1"
-                Compressed="yes"
-                Cache="no"
-                PerMachine="yes"
-                Permanent="no"
-                Vital="yes"
+                DisplayName="Installer 1"
                 InstallCommand="action=install installdir=&quot;c:\Program Files\BundleWithExePackages\Installer1&quot; message=&quot;[Message1]&quot;"
                 UninstallCommand="action=uninstall">
 

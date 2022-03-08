@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Win32;
 
-namespace DustInTheWind.Installer2
+namespace DustInTheWind.Installer1
 {
     internal class ApplicationRegistry
     {
